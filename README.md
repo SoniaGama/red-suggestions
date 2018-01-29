@@ -2,6 +2,16 @@
 
 ## Nuestra Red Social *Suggestions (SUGG)*
 
+- Proveniente de la palabra en inglés “suggestions” que significa “sugerencias”, ya que al ser una red de recomendaciones, aplicamos el sinónimo sugerencias para definir el nombre de la RS.
+
+###Colores:
+- Amarillo ya que transmite alegría, felicidad y energía. Un buen color para el mundo del ocio y perfecto para el mundo de la comunicación y el entretenimiento.
+
+- Azul porque se relaciona con la tecnología, y además al ser un azul oscuro, implica autenticidad, confianza, seguridad y fidelidad. Definiciones que en conjunto queremos transmitir en esta red social.
+
+- Tipografía del logotipo: Grand Hotel, es una fuente regular, que denota ser casual e incluso retro.
+
+
 - En nuestra red social podrás encontrar recomendaciones de tus amigos sobre lugares para salir; sobre películas y productos en general, también podrás compartir tus propias recomendaciones.
 
 *Nota: Las opciones sobre películas y productos en general son un segundo alcance, por el momento nos enfocaremos en el primero, que es de lugares.*
