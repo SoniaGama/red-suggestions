@@ -1,4 +1,5 @@
 # Pseudocódigo y sketch
+<!-- ![1ª parte](images/ux-ui/1.png) subir imagenes-->
 
 ## Nuestra Red Social *Suggestions (SUGG)*
 
