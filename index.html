@@ -13,88 +13,110 @@
 
 <body>
     <!--Este es el contendedor general-->
-    <container class="container-fluid">
 
-        <!--Aquí va todo el contenido del header-->
-        <header class="container-fluid">
-            <section class="row">
-                <div class=" col logo-and-user">Definir la col que le corresponda</div>
-                <div class="col perfil logo photo-user">Definir la col que le corresponda</div>
-                <img class="col" src="" alt="photoUser">
-                <menu class="col" type="context">Aqui va el menu hamburguesa, definir su col también</menu>
-            </section>
-        </header>
-
-        <!--Aquí va el select-->
-        <section class="container-fluid">
-            <section class="row">
-                <div class="col select">
-                    <select name="" id=""></select>
-                </div>
-            </section>
+    <!--Aquí va todo el contenido del header-->
+    <header class="container-fluid">
+        <section class="row">
+            <div class=" col logo-and-user">Definir la col que le corresponda</div>
+            <div class="col perfil logo photo-user">Definir la col que le corresponda</div>
+            <img class="col" src="" alt="photoUser">
+            <menu class="col" type="context">Aqui va el menu hamburguesa, definir su col también</menu>
         </section>
+    </header>
 
-        <!--Contenedor para que el usuario haga su post, esta sección se va a ocultar y/mostrar-->
-        <section class="container-fluid">
-            <section class="row">
-                <div class="col-xs-8 col-xs-offset-2 recommendation font-cabin">
-                    <textarea name="" id=""></textarea>
-                  
-                    <div class="row location">
-                        <div class="col-xs-1">
-                            <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-xs-5">
-                            <p>Mi ubicación</p>
-                        </div>
-                        <div class="col-xs-3 col-xs-offset-3">
-                            <button></button>
-                        </div>
+    <!--Aquí va el select-->
+    <section class="container-fluid">
+        <section class="row">
+            <div class="col select">
+                <select name="" id=""></select>
+            </div>
+        </section>
+    </section>
 
+
+    <!--Contenedor para que el usuario haga su post, esta sección se va a ocultar y/mostrar-->
+    <section class="container-fluid">
+        <section class="row">
+            <div class="col-xs-8 col-xs-offset-2 recommendation font-cabin">
+                <textarea name="" id=""></textarea>
+                <div class="row location">
+                    <div class="col-xs-1">
+                        <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
                     </div>
-                </div>
-            </section>
-        </section>
+                    <div class="col-xs-5">
+                        <p>Mi ubicación</p>
+                    </div>
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <input class="btn btn-default btn-submit" type="submit" value="Submit">
 
-        <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
-        <section class="container-fluid">
-            <section class="row">
-                <!--Esta parte se hará dinámicamente con DOM-->
-                <div class="col post-usser">
-                    <img src="" alt="lugar-recomendado">
-                    <p>Comentario de usuario</p>
-                    <a id="edit" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                    <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                </div>
-            </section>
-        </section>
+                        <!--Contenedor para que el usuario haga su post, esta sección se va a ocultar y/mostrar-->
+                        <section class="container-fluid">
+                            <section class="row">
+                                <div class="col-xs-8 col-xs-offset-2 recommendation font-cabin">
+                                    <textarea name="" id=""></textarea>
 
-        <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
-        <section class="container-fluid">
-            <section class="row">
-                <!--Esta parte se hará dinámicamente con DOM-->
-                <div class="col post-usser">
-                    <img src="" alt="lugar-recomendado">
-                    <p>Comentario de usuario</p>
-                    <a id="save" href=""><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-                    <a id="delete" href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                    <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-                </div>
-            </section>
-        </section>
+                                    <div class="row location">
+                                        <div class="col-xs-1">
+                                            <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <p>Mi ubicación</p>
+                                        </div>
+                                        <div class="col-xs-3 col-xs-offset-3">
+                                            <button></button>
+                                        </div>
 
-        <!--Otros iconos para usar
+                                    </div>
+                                </div>
+                    </div>
+                    </section>
+                    </section>
+
+                    <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
+                    <section class="container-fluid">
+                        <section class="row">
+                            <!--Esta parte se hará dinámicamente con DOM-->
+                            <div class="col-xs-12 post-usser">
+                                <img src="" alt="lugar-recomendado">
+                            </div>
+                        </section>
+                        <section class="row">
+                            <div class="col-xs-8 container-comment">
+                                <p>Comentario de usuario</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <a id="edit" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
+                    <section class="container-fluid">
+                        <section class="row">
+                            <!--Esta parte se hará dinámicamente con DOM-->
+                            <div class="col post-usser">
+                                <img src="" alt="lugar-recomendado">
+                                <p>Comentario de usuario</p>
+                                <a id="save" href=""><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+                                <a id="delete" href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!--Otros iconos para usar
         <a id="alert-friends" href=""><i class="fa fa-bell" aria-hidden="true"></i></a>
         <a id="search" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
         <a id="user" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a>
         <a id="notificación-friends" href=""><i class="fa fa-clipboard" aria-hidden="true"></i></a>-->
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/app.js">
-        </script>
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                    <script type="text/javascript" src="js/app.js">
+                    </script>
 </body>
 
 </html>
