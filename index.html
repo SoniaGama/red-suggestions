@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Sugg</title>
@@ -34,6 +33,7 @@
         </section>
     </section>
 
+
     <!--Contenedor para que el usuario haga su post, esta sección se va a ocultar y/mostrar-->
     <section class="container-fluid">
         <section class="row">
@@ -48,57 +48,75 @@
                     </div>
                     <div class="col-xs-3 col-xs-offset-3">
                         <input class="btn btn-default btn-submit" type="submit" value="Submit">
+
+                        <!--Contenedor para que el usuario haga su post, esta sección se va a ocultar y/mostrar-->
+                        <section class="container-fluid">
+                            <section class="row">
+                                <div class="col-xs-8 col-xs-offset-2 recommendation font-cabin">
+                                    <textarea name="" id=""></textarea>
+
+                                    <div class="row location">
+                                        <div class="col-xs-1">
+                                            <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <p>Mi ubicación</p>
+                                        </div>
+                                        <div class="col-xs-3 col-xs-offset-3">
+                                            <button></button>
+                                        </div>
+
+                                    </div>
+                                </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </section>
+                    </section>
+                    </section>
 
-    <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
-    <section class="container-fluid">
-        <section class="row">
-            <!--Esta parte se hará dinámicamente con DOM-->
-            <div class="col-xs-12 post-usser">
-                <img src="" alt="lugar-recomendado">
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-xs-8 container-comment">
-                <p>Comentario de usuario</p>
-            </div>
-            <div class="col-xs-3">
-                <a id="edit" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-            </div>
-        </section>
-    </section>
+                    <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
+                    <section class="container-fluid">
+                        <section class="row">
+                            <!--Esta parte se hará dinámicamente con DOM-->
+                            <div class="col-xs-12 post-usser">
+                                <img src="" alt="lugar-recomendado">
+                            </div>
+                        </section>
+                        <section class="row">
+                            <div class="col-xs-8 container-comment">
+                                <p>Comentario de usuario</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <a id="edit" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                        </section>
+                    </section>
 
-    <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
-    <section class="container-fluid">
-        <section class="row">
-            <!--Esta parte se hará dinámicamente con DOM-->
-            <div class="col post-usser">
-                <img src="" alt="lugar-recomendado">
-                <p>Comentario de usuario</p>
-                <a id="save" href=""><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-                <a id="delete" href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
-            </div>
-        </section>
-    </section>
+                    <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
+                    <section class="container-fluid">
+                        <section class="row">
+                            <!--Esta parte se hará dinámicamente con DOM-->
+                            <div class="col post-usser">
+                                <img src="" alt="lugar-recomendado">
+                                <p>Comentario de usuario</p>
+                                <a id="save" href=""><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+                                <a id="delete" href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                <a id="star" href=""><i class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+                        </section>
+                    </section>
 
-    <!--Otros iconos para usar
+                    <!--Otros iconos para usar
         <a id="alert-friends" href=""><i class="fa fa-bell" aria-hidden="true"></i></a>
         <a id="search" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
         <a id="user" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a>
         <a id="notificación-friends" href=""><i class="fa fa-clipboard" aria-hidden="true"></i></a>-->
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/app.js">
-    </script>
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                    <script type="text/javascript" src="js/app.js">
+                    </script>
 </body>
 
 </html>
