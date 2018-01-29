@@ -1,7 +1,9 @@
 #Pseudocódigo y sketch
+
 ##Nuestra Red Social **Suggestions (SUGG)**
 
 - En nuestra red social podrás encontrar recomendaciones de tus amigos sobre lugares para salir; sobre películas y productos en general, también podrás compartir tus propias recomendaciones.
+
 *Nota: Las opciones sobre películas y productos en general son un segundo alcance, por el momento nos enfocaremos en el primero, que es de lugares.*
 
 
