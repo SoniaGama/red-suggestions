@@ -1,6 +1,15 @@
-body {
-  height: 100vh;
+.height {
+  height: 88vh;
 }
+
+.padding1opx {
+  padding: 10px;
+}
+
+.padding5px {
+  padding: 5px;
+}
+
 
 /* esilos header */
 
@@ -21,7 +30,6 @@ body {
 .icons {
   font-size: 110%;
   color: #fff;
-  padding: 10px;
   border: 1px solid #83116E;
   border-radius: 50%;
 }
@@ -45,12 +53,21 @@ body {
 }
 
 
+/* estilos textare */
+/* #recomendacion {
+  width: 80%;
+} */
+
+
+
+
 /*Estilos para seccion de recommendation */
 
 .location {
     background-color: #523470;
     color: white;
     padding-top: 5px;
+    height: 6vh;
 }
 
 .icon-location {
@@ -68,12 +85,13 @@ body {
 
 .login-background {
     background-color: #755496;
+    height: 100vh;
 }
 
 .imagotipo {
     width: 100%;
-    padding-top: 200px;
-    padding-bottom: 60px;
+    padding-top: 22vh;
+    padding-bottom: 5vh;
 }
 
 .btn-login {
@@ -82,13 +100,22 @@ body {
 }
 
 .btn-account {
-    margin-bottom: 250px;
+    /* margin-bottom: 250px; */
 }
 
-.col-xs {
+.btn {
+  width: 100%;
+}
+
+/* .col-xs {
     margin-left: 0px;
     margin-right: 0px;
-}
+} */
+
+
+
+
+
 
 
 /*Estilos para la seccion de post de usuario*/
