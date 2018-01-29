@@ -5,3 +5,18 @@
 .font-cabin {
     font-family: 'Cabin', sans-serif;
 }
+
+
+/*Estilos para seccion de recommendation */
+
+.location {
+    background-color: #523470;
+    color: white;
+    padding-top: 5px;
+}
+
+.icon-location {
+    color: white;
+    padding-top: 5px;
+    margin-right: 0px;
+}
