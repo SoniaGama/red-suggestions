@@ -1,3 +1,41 @@
+body {
+  height: 100vh;
+}
+
+/* esilos header */
+
+.background-header {
+  background-color: #BF64F7;
+  /* #00E0E7; */
+  height: 12vh;
+}
+
+.img-header {
+  width: 100%;
+}
+
+.margin {
+  margin-top: 2vh;
+}
+
+.icons {
+  font-size: 110%;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #83116E;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 110%;
+  padding: 10px;
+  color: #fff;
+}
+
+
+
+/* fonts */
+
 .font-dosis {
     font-family: 'Dosis', sans-serif;
 }
