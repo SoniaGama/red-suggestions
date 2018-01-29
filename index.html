@@ -22,12 +22,51 @@
       </section>
       <section class="row">
           <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-              <button type="button" class="btn btn-default btn-login font-cabin">Iniciar sesión</button>
+              <input class="width100 textCenter" type="text" placeholder="Usuario">
+              <input class="width100 textCenter" type="text" placeholder="Password">
+              <button type="submit" class="background-color-color btn btn-default btn-login font-cabin">Iniciar sesión</button>
           </div>
       </section>
       <section class="row">
           <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-              <button type="button" class="btn btn-default btn-account font-cabin">Crear cuenta</button>
+              <!-- <input class="width100 textCenter" type="text" placeholder="Usuario">
+              <input class="width100 textCenter" type="text" placeholder="Password"> -->
+              <button type="button"class="background-color-color btn btn-default btn-account font-cabin" data-toggle="modal" data-target="#myModal">Crear cuenta</button><!-- Button trigger modal -->
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header background-color-color">
+                  <button type="button" class="close  background-color-color" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title textCenter" id="myModalLabel">Crear cuenta</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="color-purple">
+                    <div class="form-group">
+                         <label class="" for="exampleInputFile">Imágen de Usuario</label>
+                         <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i>
+                         <input type="file" accept=".jpg, .jpeg, .png">
+                     </div>
+                     <div class="form-group ">
+                         <label for="exampleInputEmail1">Nombre de usuario</label>
+                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mi nombre de usuario">
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputEmail1">Email address</label>
+                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputPassword1">Password</label>
+                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                     </div>
+
+                    <button type="submit" class="btn btn-default btn-account font-cabin background-color-color">Registrarme</button>
+                   </form>
+                </div>
+              </div>
+            </div>
           </div>
       </section>
   </section>
@@ -36,8 +75,8 @@
   <section class="background-header">
     <section class="container">
       <header class="row margin">
-          <div class="margin col-xs-3 col-md-1 col-lg-1 logo-and-user"><img class="img-header" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>
-          <div class="margin col-xs-2 col-md-1 col-lg-1 perfil logo photo-user"><img class="img-header" src="assets/images/logo-morado.png" alt="logo"></div>
+          <div class="margin col-xs-3 col-md-1 col-lg-1 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>
+          <div class="margin col-xs-2 col-md-1 col-lg-1 perfil logo photo-user"><img class="width100" src="assets/images/logo-morado.png" alt="logo"></div>
           <!-- <img class="col-xs-2" src="" alt="photoUser"> -->
           <a class="margin col-xs-offset-1 col-xs-1 col-lg-offset-3 col-lg-1" id="alert-friends" href=""><i class="fa fa-bell icons padding1opx" aria-hidden="true"></i></a>
           <a class="margin col-xs-offset-1 col-xs-1 col-lg-offset-1 col-lg-1" id="notificación-friends" href=""><i class="fa fa-clipboard icons padding1opx" aria-hidden="true"></i></a>
