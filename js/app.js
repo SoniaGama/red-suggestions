@@ -11,6 +11,8 @@ var $comment = $("#comment");
 function loadPage() {
     $("#menu-bars").click(menu);
     $submit.click(showSugg);
+    //$(".avatar").click(changeProfile);
+    $(".logo-mini").click(changeIcon);
 
 }
 
@@ -46,6 +48,26 @@ function showSugg() {
     paintPostUser(textUserVal);
 
 }
+
+//funciones para cambiar del perfil de usuario al newsfeed
+function changeProfile() {
+    if ($(".imagotipo").hasClass("hidden")) {
+        $(".imagotipo").removeClass("hidden");
+        $(".imagotipo").addClass("show");
+        $(".avatar").removeClass("show");
+        $(".avatar").addClass("hidden");
+    }
+}
+
+function changeIcon() {
+    if ($(".avatar-mini").hasClass("hidden")) {
+        $(".avatar-mini").removeClass("hidden");
+        $(".avatar-mini").addClass("show");
+        $(".logo-mini").removeClass("show");
+        $(".logo-mini").addClass("hidden");
+    }
+}
+
 
 //función para pintar el contenedor de la publicación del usuario
 function paintPostUser(textUserVal) {
