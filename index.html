@@ -13,65 +13,69 @@
 </head>
 
 <body>
-    <!-- vista de inicio de sesión -->
-    <section class="container-fluid login-background">
-        <section class="row">
-            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-                <img class="imagotipo" src="assets/images/imagotipo-morado.png" alt="imagotipo">
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-                <input class="width100 textCenter" type="text" placeholder="Usuario">
-                <input class="width100 textCenter" type="text" placeholder="Password">
-                <button type="submit" class="background-color-color btn btn-default btn-login font-cabin">Iniciar sesión</button>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-                <!-- <input class="width100 textCenter" type="text" placeholder="Usuario">
+
+  <!-- vista de inicio de sesión -->
+  <section class="container-fluid login-background">
+      <section class="row">
+          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
+              <img class="imagotipo" src="assets/images/imagotipo-morado.png" alt="imagotipo">
+          </div>
+      </section>
+      <section class="row">
+          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
+              <input class="width100 textCenter" type="text" placeholder="Usuario">
+              <input maxlength="10" class="width100 textCenter" type="password" placeholder="10 Caracteres">
+              <button type="submit" class="background-color-color btn btn-default btn-login font-cabin">Iniciar sesión</button>
+          </div>
+      </section>
+      <section class="row">
+          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
+              <!-- <input class="width100 textCenter" type="text" placeholder="Usuario">
               <input class="width100 textCenter" type="text" placeholder="Password"> -->
-                <button type="button" class="background-color-color btn btn-default btn-account font-cabin" data-toggle="modal" data-target="#myModal">Crear cuenta</button>
-                <!-- Button trigger modal -->
-            </div>
+              <button type="button"class="background-color-color btn btn-default btn-account font-cabin" data-toggle="modal" data-target="#myModal">Crear cuenta</button><!-- Button trigger modal -->
+          </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header background-color-color">
-                            <button type="button" class="close  background-color-color" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title textCenter" id="myModalLabel">Crear cuenta</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="color-purple">
-                                <div class="form-group">
-                                    <label class="" for="exampleInputFile">Imágen de Usuario</label>
-                                    <i class="fa fa-file-image-o fa-lg " aria-hidden="true"></i>
-                                    <input type="file" accept=".jpg, .jpeg, .png">
-                                </div>
-                                <div class="form-group ">
-                                    <label for="exampleInputEmail1">Nombre de usuario</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Mi nombre de usuario">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-
-                                <button type="submit" class="btn btn-default btn-account font-cabin background-color-color">Registrarme</button>
-                            </form>
-                        </div>
-                    </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header background-color-color">
+                  <button type="button" class="close  background-color-color" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title textCenter" id="myModalLabel">Crear cuenta</h4>
                 </div>
-            </div>
-        </section>
-    </section>
+                <div class="modal-body">
+                  <form class="color-purple">
+                    <div class="form-group">
+                         <span>Imágen de Usuario</span>
+                         <label class="" for="exampleInputFile">
+                           <i class="image-load padding1opx load-image fa fa-file-image-o fa-lg " aria-hidden="true"></i>
+                           <input class="hidden" type="file" accept=".jpg, .jpeg, .png">
+                         </label>
 
+                     </div>
+                     <div class="form-group ">
+                         <label for="exampleInputEmail1">Nombre de usuario</label>
+                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Mi nombre de usuario">
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputEmail1">Email address</label>
+                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputPassword1">Password</label>
+                         <input type="password" maxlength="10" class="form-control" id="exampleInputPassword1" placeholder="10 Caracteres">
+                     </div>
+
+                    <button type="submit" class="btn btn-default btn-account font-cabin background-color-color">Registrarme</button>
+                   </form>
+                </div>
+              </div>
+
+   
+
+            </div>
+
+           
     <!--Aquí va todo el contenido del header-->
     <section class="background-header header">
         <section class="container">
@@ -123,7 +127,7 @@
         </section>
     </section>
 
-    <!-- cotenedor general -->
+    <!-- contenedor general -->
     <section class="container height">
 
         <!--Aquí va el select-->
@@ -145,25 +149,60 @@
             <textarea id="text-user" type="file" class="col-xs-offset-1 col-xs-10 margin" name="" id="recomendacion" placeholder="Escribe tu recomendación de hoy, y no olvides subir tu foto favorita del lugar!"></textarea>
         </section>
         <section class="row">
-            <div class="col-xs-offset-1 col-xs-10 recommendation font-cabin">
 
-                <div class="row location">
-                    <div class="col-xs-3">
-                        <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Mi ubicación</a>
-                    </div>
-                    <div class="col-xs-6">
-                        <!-- <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i> -->
-                        <input class=" btn btn-default" type="file" id="exampleInputFile">
-                    </div>
-                    <div class="col-xs-3">
-                        <input id="publish" class="btn btn-default btn-submit" type="submit" value="Publicar">
-                    </div>
+          <div class="col-xs-offset-1 col-xs-10 recommendation font-cabin">
+
+               <div class="row location">
+                   <div class="col-xs-3">
+                       <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Mi ubicación</a>
+                   </div>
+                  <div class="col-xs-6">
+                    <label class="image-form color-white">
+                      <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i>
+                      <span>Compartenos tu imágen </span>
+                      <input class="hidden btn btn-default" type="file" id="exampleInputFile">
+                    </label>
+                  </div>
+                   <div class="col-xs-3">
+                       <input id="publish" class="btn btn-default btn-submit" type="submit" value="Publicar">
+                   </div>
+            
+
                 </div>
             </div>
         </section>
 
-        <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
-        <section id="container-comment" class="row margin">
+
+        <!-- contenedor de publicaciones -->
+        <section id="container-publish">
+          <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
+          <!--Esta parte se hará dinámicamente con DOM-->
+          <section class="row margin">
+
+              <div class="image-publish col-xs-offset-1 col-xs-10 post-usser container-img">
+                  <!-- <img src="" alt="lugar-recomendado"> -->
+              </div>
+
+              <section class="container-comment col-xs-offset-1 col-xs-10">
+                <section class="row">
+                  <div class="container-sugg col-xs-10">
+                      <p class="time"></p>
+                      <p class="comment comment-prueba"></p>
+                  </div>
+                  <div class="col-xs-2 container-icons">
+                    <div class="row">
+                      <a class="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                      <a class="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                      <span class="col-sm-1 col-xs-1">1</span>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </section>
+
+
+          <!--Aquí va el contenido de newfeed, esta sección se va a ocultar y/mostrar-->
+           <section id="container-comment" class="row margin">
             <!--Esta parte se hará dinámicamente con DOM-->
             <!-- <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
                 <img src="" alt="lugar-recomendado"> 
@@ -177,12 +216,18 @@
                     </div> 
                     <div class="col-xs-2 container-icons">
                         <div class="row">-->
-            <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
-            <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-            <!--<span class="col-sm-1 col-xs-1">1</span>
-            </div>
-            </div>-->
-        </section>
+                            <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                            <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                            <!--<span class="col-sm-1 col-xs-1">1</span>
+                        </div>
+                     </div>-->
+                 </section>   
+                 
+          
+         
+
+        <!--Referencia-->
+       
     </section>
     </section>
 
@@ -210,7 +255,12 @@
 
 
         </section>
+
+
+
+        </section>
     </section>
+
 
     </section>
 

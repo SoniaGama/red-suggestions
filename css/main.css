@@ -41,6 +41,9 @@ select,
 .tx-aling-rigth {
     text-align: right;
 }
+.color-white{
+  color: #fff;
+}
 
 
 /* esilos header */
@@ -109,6 +112,18 @@ select,
 }
 
 
+
+/* modal */
+.load-image{
+  font-size: 150%;
+  border-radius: 50%;
+  border: 1px solid #701F6E;
+}
+
+.image-load:hover {
+  background-color: #701F6E;
+  color: #fff;
+
 /* input type file  */
 
 
@@ -122,6 +137,10 @@ select,
     color: #fff;
 }
 
+/* subir imagen */
+.image-form:hover {
+  color: rgb(162, 82, 224);
+}
 
 /* fonts */
 
