@@ -53,10 +53,16 @@ select,
 }
 
 
-/* elementos modal */
-/* .input-image {
-  color: transparent !important;
+/* input type file  */
+/* input[type='file'] {
+  color: #000 !important;
+  opacity: 0;
+
 } */
+
+.color-white{
+  color: #fff;
+}
 
 
 /* fonts */
@@ -84,7 +90,7 @@ select,
     background-color: #523470;
     color: white;
     padding-top: 5px;
-    height: 6vh;
+    height: 8vh;
 }
 
 .icon-location {
@@ -139,8 +145,14 @@ select,
 
 
 /*Estilos para la seccion de post de usuario*/
+.container-img {
+  background-color: rgb(255, 0, 25);
+}
+
+.container-icons {
+  background-color: orange;
+}
 
 .container-comment {
-    background-color: #c3c2c5;
-    width: 100%;
+    background-color: #b8b2c6;
 }
