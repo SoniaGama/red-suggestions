@@ -13,97 +13,117 @@
 </head>
 
 <body>
-  <!-- vista de inicio de sesión -->
-  <section class="container-fluid login-background">
-      <section class="row">
-          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-              <img class="imagotipo" src="assets/images/imagotipo-morado.png" alt="imagotipo">
-          </div>
-      </section>
-      <section class="row">
-          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-              <input class="width100 textCenter" type="text" placeholder="Usuario">
-              <input class="width100 textCenter" type="text" placeholder="Password">
-              <button type="submit" class="background-color-color btn btn-default btn-login font-cabin">Iniciar sesión</button>
-          </div>
-      </section>
-      <section class="row">
-          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
-              <!-- <input class="width100 textCenter" type="text" placeholder="Usuario">
+    <!-- vista de inicio de sesión -->
+    <section class="container-fluid login-background">
+        <section class="row">
+            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
+                <img class="imagotipo" src="assets/images/imagotipo-morado.png" alt="imagotipo">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
+                <input class="width100 textCenter" type="text" placeholder="Usuario">
+                <input class="width100 textCenter" type="text" placeholder="Password">
+                <button type="submit" class="background-color-color btn btn-default btn-login font-cabin">Iniciar sesión</button>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
+                <!-- <input class="width100 textCenter" type="text" placeholder="Usuario">
               <input class="width100 textCenter" type="text" placeholder="Password"> -->
-              <button type="button"class="background-color-color btn btn-default btn-account font-cabin" data-toggle="modal" data-target="#myModal">Crear cuenta</button><!-- Button trigger modal -->
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header background-color-color">
-                  <button type="button" class="close  background-color-color" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title textCenter" id="myModalLabel">Crear cuenta</h4>
-                </div>
-                <div class="modal-body">
-                  <form class="color-purple">
-                    <div class="form-group">
-                         <label class="" for="exampleInputFile">Imágen de Usuario</label>
-                         <i class="fa fa-file-image-o fa-lg " aria-hidden="true"></i>
-                         <input type="file" accept=".jpg, .jpeg, .png">
-                     </div>
-                     <div class="form-group ">
-                         <label for="exampleInputEmail1">Nombre de usuario</label>
-                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Mi nombre de usuario">
-                     </div>
-                     <div class="form-group">
-                         <label for="exampleInputEmail1">Email address</label>
-                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
-                     </div>
-                     <div class="form-group">
-                         <label for="exampleInputPassword1">Password</label>
-                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                     </div>
-
-                    <button type="submit" class="btn btn-default btn-account font-cabin background-color-color">Registrarme</button>
-                   </form>
-                </div>
-              </div>
+                <button type="button" class="background-color-color btn btn-default btn-account font-cabin" data-toggle="modal" data-target="#myModal">Crear cuenta</button>
+                <!-- Button trigger modal -->
             </div>
-          </div>
-      </section>
-  </section>
 
-  <!--Aquí va todo el contenido del header-->
-  <section class="background-header">
-    <section class="container">
-      <header class="row margin">
-          <div class="margin col-xs-3 col-md-1 col-lg-1 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>
-          <div class="margin col-xs-2 col-md-1 col-lg-1 perfil logo photo-user"><img class="width100" src="assets/images/logo-morado.png" alt="logo"></div>
-          <!-- <img class="col-xs-2" src="" alt="photoUser"> -->
-          <a class="margin col-xs-1 col-lg-offset-3 col-lg-1" id="alert-friends" href=""><i class="fa fa-bell icons padding1opx" aria-hidden="true"></i></a>
-          <a class="margin col-xs-offset-1 col-xs-1 col-lg-offset-1 col-lg-1" id="notificación-friends" href=""><i class="fa fa-clipboard icons padding1opx" aria-hidden="true"></i></a>
-          <menu class="icon-menu col-xs-4 col-lg-offset-2 col-lg-1" type="context"><i id="menu-bars" class="fa fa-bars icon" aria-hidden="true"></i>
-            <div class="row">
-             <div class="col-xs-12 options hidden font-cabin">
-               <a href="#"><p>Mis amigos</p></a>
-               <a href="#"><p>Nuestras recomendaciones</p></a>
-               <a href="#"><p>Elementos guardados</p></a>
-               <a href="#"><p>Buscar amigos</p></a>
-               <a href="#"><p>Solicitudes de amigos</p></a>
-               <a href="#"><p>Invitar amigos</p></a>
-               <a href="#"><p>Menú de ayuda</p></a>
-               <a href="#"><p>Configuración</p></a>
-               <a href="#"><p>Cerrar sesión</p></a>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header background-color-color">
+                            <button type="button" class="close  background-color-color" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title textCenter" id="myModalLabel">Crear cuenta</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="color-purple">
+                                <div class="form-group">
+                                    <label class="" for="exampleInputFile">Imágen de Usuario</label>
+                                    <i class="fa fa-file-image-o fa-lg " aria-hidden="true"></i>
+                                    <input type="file" accept=".jpg, .jpeg, .png">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="exampleInputEmail1">Nombre de usuario</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Mi nombre de usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+
+                                <button type="submit" class="btn btn-default btn-account font-cabin background-color-color">Registrarme</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </menu>
-
-      </header>
+        </section>
     </section>
-  </section>
 
-  <!-- cotenedor general -->
-  <section class="container height">
+    <!--Aquí va todo el contenido del header-->
+    <section class="background-header">
+        <section class="container">
+            <header class="row margin">
+                <div class="margin col-xs-3 col-sm-2 col-md-3 col-lg-2 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>
+                <img class="col-xs-2 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 margin" src="assets/images/user-profile.png" alt="photoUser">
+                <!-- <img class="col-xs-2" src="" alt="photoUser"> -->
+                <!-- <div class="margin col-xs-3 col-md-1 col-lg-1 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>-->
+                <a class="margin m-r col-xs-1 col-xs-offset-1 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-lg-1" id="alert-friends" href=""><i class="fa fa-bell icons padding1opx" aria-hidden="true"></i></a>
+                <a class="margin col-xs-1 col-sm-1 col-sm-offset- col-md-1 col-lg-1" id="notificación-friends" href=""><i class="fa fa-clipboard icons padding1opx" aria-hidden="true"></i></a>
+                <menu class="icon-menu col-xs-3 col-sm-3 col-md-2 col-lg-2 tx-aling-rigth" type="context"><i id="menu-bars" class="fa fa-bars icon" aria-hidden="true"></i>
+                    <div class="row">
+                        <div class="col-xs-12 options hidden font-cabin">
+                            <a href="#">
+                                <p>Mis amigos</p>
+                            </a>
+                            <a href="#">
+                                <p>Nuestras recomendaciones</p>
+                            </a>
+                            <a href="#">
+                                <p>Elementos guardados</p>
+                            </a>
+                            <a href="#">
+                                <p>Buscar amigos</p>
+                            </a>
+                            <a href="#">
+                                <p>Solicitudes de amigos</p>
+                            </a>
+                            <a href="#">
+                                <p>Invitar amigos</p>
+                            </a>
+                            <a href="#">
+                                <p>Menú de ayuda</p>
+                            </a>
+                            <a href="#">
+                                <p>Configuración</p>
+                            </a>
+                            <a href="#">
+                                <p>Cerrar sesión</p>
+                            </a>
+                        </div>
+                    </div>
+                </menu>
 
-    <!--Aquí va el select-->
+            </header>
+        </section>
+    </section>
+
+    <!-- cotenedor general -->
+    <section class="container height">
+
+        <!--Aquí va el select-->
 
         <section class="row">
             <div class="col-xs-offset-7 select padding1opx">
@@ -122,77 +142,77 @@
             <textarea id="text-user" type="file" class="col-xs-offset-1 col-xs-10" name="" id="recomendacion" placeholder="¿Hoy cuál es tu recomendación?"></textarea>
         </section>
         <section class="row">
-          <div class="col-xs-offset-1 col-xs-10 recommendation font-cabin">
+            <div class="col-xs-offset-1 col-xs-10 recommendation font-cabin">
 
-               <div class="row location">
-                   <div class="col-xs-3">
-                       <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Mi ubicación</a>
-                   </div>
-                  <div class="col-xs-6">
-                     <!-- <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i> -->
-                     <input class=" btn btn-default" type="file" id="exampleInputFile">
-                  </div>
-                   <div class="col-xs-3">
-                       <input id="publish" class="btn btn-default btn-submit" type="submit" value="Publicar">
-                   </div>
+                <div class="row location">
+                    <div class="col-xs-3">
+                        <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Mi ubicación</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <!-- <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i> -->
+                        <input class=" btn btn-default" type="file" id="exampleInputFile">
+                    </div>
+                    <div class="col-xs-3">
+                        <input id="publish" class="btn btn-default btn-submit" type="submit" value="Publicar">
+                    </div>
                 </div>
-           </div>
+            </div>
         </section>
 
-           <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
-           <section class="row margin">
-               <!--Esta parte se hará dinámicamente con DOM-->
-               <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
-                   <!-- <img src="" alt="lugar-recomendado"> -->
-               </div>
+        <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
+        <section class="row margin">
+            <!--Esta parte se hará dinámicamente con DOM-->
+            <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
+                <!-- <img src="" alt="lugar-recomendado"> -->
+            </div>
 
-           <section class="col-xs-offset-1 col-xs-10 container-comment">
-             <section class="row">
-               <div id="container-sugg" class="col-xs-10">
-                   <p id="time"></p>
-                   <p id="comment"></p>
-               </div>
-               <div class="col-xs-2 container-icons">
-                 <div class="row">
-                   <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
-                   <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-                   <span class="col-sm-1 col-xs-1">1</span>
-                 </div>
-               </div>
-             </section>
-           </section>
-          </section>
-
-
-           <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
-           <section class="row margin">
-                <!--Esta parte se hará dinámicamente con DOM-->
-                <div class="col-xs-offset-1 col-xs-10 post-usser container-img post-usser">
-                    <img src="" alt="lugar-recomendado">
-                </div>
-                <section class="col-xs-offset-1 col-xs-10 container-comment">
-                  <div class="row">
-                    <section class=" col-xs-10">
-                      <p>Comentario de usuario</p>
-                    </section>
-                    <section class="col-xs-2 container-icons">
-                      <section class="row">
-                        <a id="save" href=""><i class="fa fa-floppy-o col-xs-1" aria-hidden="true"></i></a>
-                        <a id="delete" href=""><i class="fa fa-trash-o col-sm-col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-                        <a id="star" href=""><i class="fa fa-star col-xs-offset-2 col-xs-1" aria-hidden="true"></i></a>
-                        <span class= "col-xs-1">1</span>
-                      </section>
-                    </section>
-                  </div>
-
-
+            <section class="col-xs-offset-1 col-xs-10 container-comment">
+                <section class="row">
+                    <div id="container-sugg" class="col-xs-10">
+                        <p id="time"></p>
+                        <p id="comment"></p>
+                    </div>
+                    <div class="col-xs-2 container-icons">
+                        <div class="row">
+                            <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                            <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                            <span class="col-sm-1 col-xs-1">1</span>
+                        </div>
+                    </div>
                 </section>
             </section>
+        </section>
 
-      </section>
+
+        <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
+        <section class="row margin">
+            <!--Esta parte se hará dinámicamente con DOM-->
+            <div class="col-xs-offset-1 col-xs-10 post-usser container-img post-usser">
+                <img src="" alt="lugar-recomendado">
+            </div>
+            <section class="col-xs-offset-1 col-xs-10 container-comment">
+                <div class="row">
+                    <section class=" col-xs-10">
+                        <p>Comentario de usuario</p>
+                    </section>
+                    <section class="col-xs-2 container-icons">
+                        <section class="row">
+                            <a id="save" href=""><i class="fa fa-floppy-o col-xs-1" aria-hidden="true"></i></a>
+                            <a id="delete" href=""><i class="fa fa-trash-o col-sm-col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                            <a id="star" href=""><i class="fa fa-star col-xs-offset-2 col-xs-1" aria-hidden="true"></i></a>
+                            <span class="col-xs-1">1</span>
+                        </section>
+                    </section>
+                </div>
 
 
-                    <!--Otros iconos para usar
+            </section>
+        </section>
+
+    </section>
+
+
+    <!--Otros iconos para usar
 
         <a id="alert-friends" href=""><i class="fa fa-bell" aria-hidden="true"></i></a>
         <a id="search" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -200,12 +220,12 @@
         <a id="notificación-friends" href=""><i class="fa fa-clipboard" aria-hidden="true"></i></a>-->
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-                    <script type="text/javascript" src="js/data.js"></script>
-                    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 
