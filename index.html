@@ -23,7 +23,7 @@
       <section class="row">
           <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">
               <input class="width100 textCenter" type="text" placeholder="Usuario">
-              <input class="width100 textCenter" type="text" placeholder="Password">
+              <input maxlength="10" class="width100 textCenter" type="password" placeholder="10 Caracteres">
               <button type="submit" class="background-color-color btn btn-default btn-login font-cabin">Iniciar sesión</button>
           </div>
       </section>
@@ -45,9 +45,12 @@
                 <div class="modal-body">
                   <form class="color-purple">
                     <div class="form-group">
-                         <label class="" for="exampleInputFile">Imágen de Usuario</label>
-                         <i class="fa fa-file-image-o fa-lg " aria-hidden="true"></i>
-                         <input type="file" accept=".jpg, .jpeg, .png">
+                         <span>Imágen de Usuario</span>
+                         <label class="" for="exampleInputFile">
+                           <i class="image-load padding1opx load-image fa fa-file-image-o fa-lg " aria-hidden="true"></i>
+                           <input class="hidden" type="file" accept=".jpg, .jpeg, .png">
+                         </label>
+
                      </div>
                      <div class="form-group ">
                          <label for="exampleInputEmail1">Nombre de usuario</label>
@@ -59,7 +62,7 @@
                      </div>
                      <div class="form-group">
                          <label for="exampleInputPassword1">Password</label>
-                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                         <input type="password" maxlength="10" class="form-control" id="exampleInputPassword1" placeholder="10 Caracteres">
                      </div>
 
                     <button type="submit" class="btn btn-default btn-account font-cabin background-color-color">Registrarme</button>
@@ -129,8 +132,11 @@
                        <a class="icon-location" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Mi ubicación</a>
                    </div>
                   <div class="col-xs-6">
-                     <!-- <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i> -->
-                     <input class=" btn btn-default" type="file" id="exampleInputFile">
+                    <label class="image-form color-white">
+                      <i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i>
+                      <span>Compartenos tu imágen </span>
+                      <input class="hidden btn btn-default" type="file" id="exampleInputFile">
+                    </label>
                   </div>
                    <div class="col-xs-3">
                        <input id="publish" class="btn btn-default btn-submit" type="submit" value="Publicar">
@@ -139,55 +145,61 @@
            </div>
         </section>
 
-           <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
-           <section class="row margin">
-               <!--Esta parte se hará dinámicamente con DOM-->
-               <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
-                   <!-- <img src="" alt="lugar-recomendado"> -->
-               </div>
+        <!-- contenedor de publicaciones -->
+        <section id="container-publish">
+          <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
+          <!--Esta parte se hará dinámicamente con DOM-->
+          <section class="row margin">
 
-           <section class="col-xs-offset-1 col-xs-10 container-comment">
-             <section class="row">
-               <div id="container-sugg" class="col-xs-10">
-                   <p id="time"></p>
-                   <p id="comment"></p>
-               </div>
-               <div class="col-xs-2 container-icons">
-                 <div class="row">
-                   <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
-                   <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-                   <span class="col-sm-1 col-xs-1">1</span>
-                 </div>
-               </div>
-             </section>
-           </section>
-          </section>
+              <div class="image-publish col-xs-offset-1 col-xs-10 post-usser container-img">
+                  <!-- <img src="" alt="lugar-recomendado"> -->
+              </div>
 
-
-           <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
-           <section class="row margin">
-                <!--Esta parte se hará dinámicamente con DOM-->
-                <div class="col-xs-offset-1 col-xs-10 post-usser container-img post-usser">
-                    <img src="" alt="lugar-recomendado">
-                </div>
-                <section class="col-xs-offset-1 col-xs-10 container-comment">
-                  <div class="row">
-                    <section class=" col-xs-10">
-                      <p>Comentario de usuario</p>
-                    </section>
-                    <section class="col-xs-2 container-icons">
-                      <section class="row">
-                        <a id="save" href=""><i class="fa fa-floppy-o col-xs-1" aria-hidden="true"></i></a>
-                        <a id="delete" href=""><i class="fa fa-trash-o col-sm-col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-                        <a id="star" href=""><i class="fa fa-star col-xs-offset-2 col-xs-1" aria-hidden="true"></i></a>
-                        <span class= "col-xs-1">1</span>
-                      </section>
-                    </section>
+              <section class="container-comment col-xs-offset-1 col-xs-10">
+                <section class="row">
+                  <div class="container-sugg col-xs-10">
+                      <p class="time"></p>
+                      <p class="comment comment-prueba"></p>
                   </div>
-
-
+                  <div class="col-xs-2 container-icons">
+                    <div class="row">
+                      <a class="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                      <a class="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                      <span class="col-sm-1 col-xs-1">1</span>
+                    </div>
+                  </div>
                 </section>
+              </section>
             </section>
+
+
+          <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
+          <section class="row margin">
+               <!--Esta parte se hará dinámicamente con DOM-->
+               <div class="col-xs-offset-1 col-xs-10 post-usser container-img post-usser">
+                   <img src="" alt="lugar-recomendado">
+               </div>
+               <section class="col-xs-offset-1 col-xs-10 container-comment">
+                 <div class="row">
+                   <section class=" col-xs-10">
+                     <p>Comentario de usuario</p>
+                   </section>
+                   <section class="col-xs-2 container-icons">
+                     <section class="row">
+                       <a id="save" href=""><i class="fa fa-floppy-o col-xs-1" aria-hidden="true"></i></a>
+                       <a id="delete" href=""><i class="fa fa-trash-o col-sm-col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                       <a id="star" href=""><i class="fa fa-star col-xs-offset-2 col-xs-1" aria-hidden="true"></i></a>
+                       <span class= "col-xs-1">1</span>
+                     </section>
+                   </section>
+                 </div>
+
+
+               </section>
+           </section>
+
+        </section>
+
 
       </section>
 

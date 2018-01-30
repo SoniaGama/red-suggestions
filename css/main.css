@@ -26,6 +26,9 @@ select,
   background-color: #701F6E;
   color: #fff;
 }
+.color-white{
+  color: #fff;
+}
 
 /* esilos header */
 
@@ -75,17 +78,22 @@ select,
 }
 
 
-/* input type file  */
-/* input[type='file'] {
-  color: #000 !important;
-  opacity: 0;
+/* modal */
+.load-image{
+  font-size: 150%;
+  border-radius: 50%;
+  border: 1px solid #701F6E;
+}
 
-} */
-
-.color-white{
+.image-load:hover {
+  background-color: #701F6E;
   color: #fff;
 }
 
+/* subir imagen */
+.image-form:hover {
+  color: rgb(162, 82, 224);
+}
 
 /* fonts */
 
