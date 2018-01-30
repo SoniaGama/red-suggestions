@@ -70,6 +70,10 @@ select,
   cursor: pointer;
 }
 
+.icon-menu {
+  text-align: right;
+}
+
 
 /* elementos modal */
 /* .input-image {
