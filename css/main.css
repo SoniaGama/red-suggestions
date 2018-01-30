@@ -1,81 +1,116 @@
 /* clases generales */
+
+body {}
+
 input::placeholder,
 textarea::placeholder,
 select,
 .color-purple {
-  color: #701F6E !important;
+    color: #701F6E !important;
 }
 
 .width100 {
-  width: 100%;
+    width: 100%;
 }
 
 .height {
-  height: 88vh;
+    height: 85vh;
 }
 
 .padding1opx {
-  padding: 10px;
+    padding: 10px;
 }
 
 .padding5px {
-  padding: 5px;
+    padding: 5px;
 }
 
-.background-color-color{
-  background-color: #701F6E;
-  color: #fff;
+.m-r {
+    margin-right: 20px;
+}
+
+.p-b {
+    padding-bottom: 2vh;
+}
+
+.background-color-color {
+    background-color: #701F6E;
+    color: #fff;
+}
+
+.tx-aling-rigth {
+    text-align: right;
 }
 .color-white{
   color: #fff;
 }
 
+
 /* esilos header */
 
 .background-header {
-  background-color: #BF64F7;
-  /* #00E0E7; */
-  height: 12vh;
+    /*background-color: #BF64F7;*/
+    background: linear-gradient(rgb(191, 100, 247), rgb(205, 152, 240));
+    /* #00E0E7; */
+    height: 15vh;
 }
 
 .margin {
-  margin-top: 2vh;
+    margin-top: 2vh;
 }
 
 .icons {
-  font-size: 110%;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 50%;
+    font-size: 110%;
+    color: #701F6E;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.icons:hover {
+    font-size: 110%;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #701F6E;
 }
 
 .icon {
-  font-size: 110%;
-  padding: 10px;
-  color: #fff;
+    font-size: 180%;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon:hover {
+    font-size: 180%;
+    padding: 5px;
+    color: #701F6E;
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 .options {
-  position: absolute;
-  background-color: #701F6E;
-  color: white;
-  padding: 10px;
-  margin-top: 6px;
-  z-index: 1;
+    position: absolute;
+    background-color: #701F6E;
+    color: white;
+    padding: 10px;
+    margin-top: 6px;
+    z-index: 1;
 }
 
-.options > a > p {
-  cursor: pointer;
-  color: white;
+.options>a>p {
+    cursor: pointer;
+    color: white;
 }
 
-.options > a > p :hover {
-  cursor: pointer;
+.options>a>p :hover {
+    cursor: pointer;
 }
 
-.icon-menu {
-  text-align: right;
-}
 
 
 /* modal */
@@ -88,6 +123,18 @@ select,
 .image-load:hover {
   background-color: #701F6E;
   color: #fff;
+
+/* input type file  */
+
+
+/* input[type='file'] {
+  color: #000 !important;
+  opacity: 0;
+
+} */
+
+.color-white {
+    color: #fff;
 }
 
 /* subir imagen */
@@ -107,14 +154,14 @@ select,
 
 
 /* estilos textare */
+
+
 /* #recomendacion {
   width: 80%;
 } */
 
 
-
-
-/*Estilos para seccion de recommendation */
+/*Estilos para seccion de recommendacion */
 
 .location {
     background-color: #523470;
@@ -156,12 +203,13 @@ select,
 }
 
 .btn {
-  width: 100%;
+    width: 100%;
 }
 
 .textCenter {
-  text-align: center;
+    text-align: center;
 }
+
 
 /* .col-xs {
     margin-left: 0px;
@@ -169,18 +217,14 @@ select,
 } */
 
 
-
-
-
-
-
 /*Estilos para la seccion de post de usuario*/
+
 .container-img {
-  background-color: rgb(255, 0, 25);
+    background-color: rgb(255, 0, 25);
 }
 
 .container-icons {
-  background-color: orange;
+    background-color: orange;
 }
 
 .container-comment {
