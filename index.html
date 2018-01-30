@@ -73,16 +73,19 @@
     </section>
 
     <!--Aquí va todo el contenido del header-->
-    <section class="background-header">
+    <section class="background-header header">
         <section class="container">
             <header class="row margin">
-                <div class="margin col-xs-3 col-sm-2 col-md-3 col-lg-2 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>
-                <img class="col-xs-2 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 margin" src="assets/images/user-profile.png" alt="photoUser">
-                <!-- <img class="col-xs-2" src="" alt="photoUser"> -->
-                <!-- <div class="margin col-xs-3 col-md-1 col-lg-1 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>-->
-                <a class="margin m-r col-xs-1 col-xs-offset-1 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-lg-1" id="alert-friends" href=""><i class="fa fa-bell icons padding1opx" aria-hidden="true"></i></a>
+                <!--Iconos para la sección de newsfeed-->
+                <!-- <div class="margin col-xs-3 col-sm-2 col-md-3 col-lg-2 logo-and-user"><img class="width100" src="assets/images/imagotipo-morado.png" alt="imagotipo"></div>-->
+                <!-- <img class="col-xs-2 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 margin cursor" src="assets/images/user-profile.png" alt="photoUser">-->
+                <!--Iconos para la sección de perfil de usuario-->
+                <img class="margin col-xs-3 col-sm-2 col-md-3 col-lg-2 logo-and-user" src="assets/images/user-profile.png" alt="photoUser">
+                <div class="col-xs-2 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 margin"><img class="width100 p-b cursor" src="assets/images/logo-morado.png" alt="logo"></div>
+                <!--Iconos de notificaciones y menú desplegable-->
+                <a class="margin m-r col-xs-1 col-xs-offse col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-lg-1" id="alert-friends" href=""><i class="fa fa-bell icons padding1opx" aria-hidden="true"></i></a>
                 <a class="margin col-xs-1 col-sm-1 col-sm-offset- col-md-1 col-lg-1" id="notificación-friends" href=""><i class="fa fa-clipboard icons padding1opx" aria-hidden="true"></i></a>
-                <menu class="icon-menu col-xs-3 col-sm-3 col-md-2 col-lg-2 tx-aling-rigth" type="context"><i id="menu-bars" class="fa fa-bars icon" aria-hidden="true"></i>
+                <menu class="icon-menu col-xs-4 col-sm-3 col-md-2 col-lg-2 tx-aling-rigth" type="context"><i id="menu-bars" class="fa fa-bars icon" aria-hidden="true"></i>
                     <div class="row">
                         <div class="col-xs-12 options hidden font-cabin">
                             <a href="#">
@@ -139,7 +142,7 @@
 
         <!--Contenedor para que el usuario haga su post, esta sección se va a ocultar y/mostrar-->
         <section class="row">
-            <textarea id="text-user" type="file" class="col-xs-offset-1 col-xs-10" name="" id="recomendacion" placeholder="¿Hoy cuál es tu recomendación?"></textarea>
+            <textarea id="text-user" type="file" class="col-xs-offset-1 col-xs-10 margin" name="" id="recomendacion" placeholder="Escribe tu recomendación de hoy, y no olvides subir tu foto favorita del lugar!"></textarea>
         </section>
         <section class="row">
             <div class="col-xs-offset-1 col-xs-10 recommendation font-cabin">
@@ -160,54 +163,54 @@
         </section>
 
         <!--Aquí va el contenido de los post de usuario, esta sección se va a ocultar y/mostrar-->
-        <section class="row margin">
+        <section id="container-comment" class="row margin">
             <!--Esta parte se hará dinámicamente con DOM-->
-            <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
-                <!-- <img src="" alt="lugar-recomendado"> -->
-            </div>
+            <!-- <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
+                <img src="" alt="lugar-recomendado"> 
+            </div>-->
 
-            <section class="col-xs-offset-1 col-xs-10 container-comment">
+            <!--<section class="col-xs-offset-1 col-xs-10 container-comment">
                 <section class="row">
                     <div id="container-sugg" class="col-xs-10">
                         <p id="time"></p>
                         <p id="comment"></p>
-                    </div>
+                    </div> 
                     <div class="col-xs-2 container-icons">
-                        <div class="row">
-                            <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
-                            <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-                            <span class="col-sm-1 col-xs-1">1</span>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </section>
-
-
-        <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
-        <section class="row margin">
-            <!--Esta parte se hará dinámicamente con DOM-->
-            <div class="col-xs-offset-1 col-xs-10 post-usser container-img post-usser">
-                <img src="" alt="lugar-recomendado">
+                        <div class="row">-->
+            <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+            <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+            <!--<span class="col-sm-1 col-xs-1">1</span>
             </div>
-            <section class="col-xs-offset-1 col-xs-10 container-comment">
-                <div class="row">
-                    <section class=" col-xs-10">
-                        <p>Comentario de usuario</p>
-                    </section>
-                    <section class="col-xs-2 container-icons">
-                        <section class="row">
-                            <a id="save" href=""><i class="fa fa-floppy-o col-xs-1" aria-hidden="true"></i></a>
-                            <a id="delete" href=""><i class="fa fa-trash-o col-sm-col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-                            <a id="star" href=""><i class="fa fa-star col-xs-offset-2 col-xs-1" aria-hidden="true"></i></a>
-                            <span class="col-xs-1">1</span>
-                        </section>
-                    </section>
-                </div>
-
-
-            </section>
+            </div>-->
         </section>
+    </section>
+    </section>
+
+
+    <!--Aquí va el contenido de los post de amigos, esta sección se va a ocultar y/mostrar-->
+    <section class="row margin">
+        <!--Esta parte se hará dinámicamente con DOM-->
+        <div class="col-xs-offset-1 col-xs-10 post-usser container-img post-usser">
+            <img src="" alt="lugar-recomendado">
+        </div>
+        <section class="col-xs-offset-1 col-xs-10 container-comment">
+            <div class="row">
+                <section class=" col-xs-10">
+                    <p>Comentario de usuario</p>
+                </section>
+                <section class="col-xs-2 container-icons">
+                    <section class="row">
+                        <a id="save" href=""><i class="fa fa-floppy-o col-xs-1" aria-hidden="true"></i></a>
+                        <a id="delete" href=""><i class="fa fa-trash-o col-sm-col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                        <a id="star" href=""><i class="fa fa-star col-xs-offset-2 col-xs-1" aria-hidden="true"></i></a>
+                        <span class="col-xs-1">1</span>
+                    </section>
+                </section>
+            </div>
+
+
+        </section>
+    </section>
 
     </section>
 
