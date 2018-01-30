@@ -4,12 +4,13 @@ var $submit = $("#publish");
 var $btnLogin = $(".boton-login"); //botón iniciar sesión
 var $imagePublish = $(".image-publish");
 var $comment = $(".comment-prueba");
+var init = $(".init");
 
 function loadPage () {
   $("#menu-bars").click(menu);
-  $submit.click(showSugg);
+  // $submit.click(showSugg);
   //$(".avatar").click(changeProfile);
-  $(".logo-mini").click(changeIcon); 
+  $(".logo-mini").click(changeIcon);
   $("#publish").click(showSugg);
 
 }
@@ -54,9 +55,7 @@ function showSugg () {
                  var $spanCount = $("<span />", {"class":"col-sm-1 col-xs-1"});
 
      var $time = new Date().toDateString(); //variable que guarda la fecha
-     
-  
-  
+
       // agregar contenido
    $pTime.text($time);
    $pComment.text($textUserVal);
@@ -70,8 +69,6 @@ function showSugg () {
    $sectionRowComment.append($divContainerSugg);
    $sectionRowComment.append($divContainerIcons);
    $divContainerSugg.append($pTime);
-   // $pTime.append($time);
-   // console.log($pTime);
    $divContainerSugg.append($pComment);
    $divContainerIcons.append($divRow);
    $divRow.append($iconEdit);
@@ -83,8 +80,8 @@ function showSugg () {
    $container.prepend($sectionRow);
    // $comment.append($time);
 
-    }
 }
+
 
 
 //funciones para cambiar del perfil de usuario al newsfeed
@@ -138,8 +135,9 @@ function paintPostUser(textUserVal) {
 }
 
 //función para iniciar sesión
-function login() {}
+function login() {
+  init.attr
+}
 
 
 $(document).ready(loadPage);
-

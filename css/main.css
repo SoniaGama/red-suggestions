@@ -1,6 +1,37 @@
 /* clases generales */
 
-body {}
+/* body {
+  background-color: red;
+} */
+
+/*Estilos para iniciar sesion*/
+
+.login-background {
+    background-color: #755496;
+    height: 100vh;
+}
+
+.imagotipo {
+    width: 100%;
+    padding-top: 22vh;
+    padding-bottom: 5vh;
+}
+
+.btn-login {
+    margin-bottom: 20px;
+}
+
+.btn-account {
+    /* margin-bottom: 250px; */
+}
+
+.btn {
+    width: 100%;
+}
+
+.textCenter {
+    text-align: center;
+}
 
 input::placeholder,
 textarea::placeholder,
@@ -180,35 +211,6 @@ select,
     padding: 2px 10px;
 }
 
-
-/*Estilos para iniciar sesion*/
-
-.login-background {
-    background-color: #755496;
-    height: 100vh;
-}
-
-.imagotipo {
-    width: 100%;
-    padding-top: 22vh;
-    padding-bottom: 5vh;
-}
-
-.btn-login {
-    margin-bottom: 20px;
-}
-
-.btn-account {
-    /* margin-bottom: 250px; */
-}
-
-.btn {
-    width: 100%;
-}
-
-.textCenter {
-    text-align: center;
-}
 
 
 /* .col-xs {
