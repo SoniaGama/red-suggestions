@@ -10,8 +10,9 @@ function loadPage () {
   $("#menu-bars").click(menu);
   // $submit.click(showSugg);
   //$(".avatar").click(changeProfile);
-  $(".logo-mini").click(changeIcon);
+  $(".filter-friends").keyup(filterFriends);
   $("#publish").click(showSugg);
+
 
 }
 
@@ -82,28 +83,6 @@ function showSugg () {
 
 }
 
-
-
-//funciones para cambiar del perfil de usuario al newsfeed
-function changeProfile() {
-    if ($(".imagotipo").hasClass("hidden")) {
-        $(".imagotipo").removeClass("hidden");
-        $(".imagotipo").addClass("show");
-        $(".avatar").removeClass("show");
-        $(".avatar").addClass("hidden");
-    }
-}
-
-function changeIcon() {
-    if ($(".avatar-mini").hasClass("hidden")) {
-        $(".avatar-mini").removeClass("hidden");
-        $(".avatar-mini").addClass("show");
-        $(".logo-mini").removeClass("show");
-        $(".logo-mini").addClass("hidden");
-    }
-}
-
-
 //función para pintar el contenedor de neewfeed
 function paintPostUser(textUserVal) {
     //llamando elementos a pintar
@@ -138,6 +117,65 @@ function paintPostUser(textUserVal) {
 function login() {
   init.attr
 }
+
+//funciones para filtrar amigos y pintarlos
+
+var filterFriends = function() {
+var friendsIndice;
+var photoFriend;
+var nameFriend;
+var contacts = [];
+    //Esta funcion debe de filtrar la data segun el valor que el usuario ingrese en el input de busqueda
+    var inputFilter = $(".input-friend").val().toLowerCase();
+    if ($(".input-friend").val().trim().length > 0) {
+      for (var i = 0; i > friends.length; i++) {
+        friendsIndice = friends[i];
+        nameFriend = friends[i].name;
+        photoFriend = friends[i].photo;
+        contacts.push(friendsIndice);
+        console.log(contacts);
+      }
+
+        var filtederedFriends = friends.filter(function(friendsIndice) {
+            return friendsIndice.name.toLowerCase().indexOf(inputFilter) >= 0;
+        })
+        /*$(".filter-friends").empty();
+        filtederedFriends.forEach(function(friendsIndice) {
+            paintFriend(friendsIndice);
+        });*/
+    } /*else {
+        $(".filter-friends").empty();
+        filtederedFriends.forEach(function(friendsIndice) {
+            paintFriend(friendsIndice);
+        });
+    }*/
+    paintFriend(friendsIndice,photoFriend,nameFriend);
+    //console.log("filter", friendsIndice)
+}
+
+var paintFriend = function(friendsIndice,photoFriend,nameFriend) {
+/*Llamando elementos que se van a utilizar para crear elemento img*/
+
+  /* Crear elementos con DOM html*/
+  var $divColContain = $("<div />",{"id":"div-friend"},{"class":"col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1"})
+  var $divContFriend = $("<div />", {"class":"thumbnail"});
+  var $img = $("<img/>",{"src":photoFriend});
+  var $divCaption = $("<div />", {"class":"caption"});
+  var $nameFriend = $("<h3 />");
+  var $pButton = $("<p />");
+  var $aButton = $("<a />", {"class":"btn btn-primary"},{"role":"button"});
+
+  /* Asignando valores a los elementos*/
+  $nameFriend.text(photoFriend);
+  $img.append(photoFriend);
+
+  //Agregamos lo que creamos con el DOM a un elemento existente del HTML
+  $divCaption.append($nameFriend);
+  $divContFriend.append($divCaption);
+  $divContFriend.append($img);
+  $pButton.append($aButton);
+  $("#content-friend").prepend($divColContain);
+};
 
 
 $(document).ready(loadPage);
