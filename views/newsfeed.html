@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <!--Aquí va todo el contenido del header-->
     <section class="background-header header">
         <section class="container">
@@ -72,26 +73,97 @@
         </div>
     </section>
 
-    <!--Aquí va el contenido de newfeed, esta sección se va a ocultar y/mostrar-->
-    <section id="container-comment" class="row margin">
-        <!--Esta parte se hará dinámicamente con DOM-->
-        <!-- <div id="image-publish" class="col-xs-offset-1 col-xs-10 post-usser container-img">
-        <img src="" alt="lugar-recomendado">
-    </div>-->
-
-        <!--<section class="col-xs-offset-1 col-xs-10 container-comment">
-        <section class="row">
-            <div id="container-sugg" class="col-xs-10">
-                <p id="time"></p>
-                <p id="comment"></p>
+    <!--Input de búsqueda de lugares-->
+    <section class="row filter-friends margin">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-7 col-lg-offset-2 filter">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">  <a id="search" href=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
+                <input type="text" class="form-control input-friend" placeholder="Busca la recomendación más cercana a ti" aria-describedby="basic-addon1">
             </div>
-            <div class="col-xs-2 container-icons">
-                <div class="row">-->
-        <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
-        <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
-        <!--<span class="col-sm-1 col-xs-1">1</span>
+        </div>
+    </section>
+
+    <!--Aquí va el contenido de newfeed-->
+
+    <section id="container-comment" class="row margin">
+        <section class="row">
+            <div class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-5 col-md-offset-3 col-lg-5 col-lg-offset-3 sugg-friend">
+                <p><span>ROBERT</span> dio SUGG de este lugar</p>
+            </div>
+        </section>
+        <div id="image-publish" class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-3 post-usser container-img">
+            <img class="img-helado" src="../assets/images/helado-oscuro.jpg" alt="lugar-recomendado">
+        </div>
+        <section class="row">
+            <section class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-3 container-comment">
+                <div id="container-sugg" class="col-xs-7">
+                    <p id="time">Wed Jan 31 2018</p>
+                    <p class="font-dosis" id="comment">Los helados en este lugar son una delicia, deben probarlos!</p>
                 </div>
-             </div>-->
+                <div class="col-xs-2 container-icons">
+                    <div class="row ">
+                        <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                        <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                        <span class="col-sm-1 col-xs-1">1</span>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+    <section id="container-comment" class="row margin">
+        <section class="row">
+            <div class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-5 col-md-offset-3 col-lg-5 col-lg-offset-3 sugg-friend">
+                <p><span>MAKY</span> dio SUGG de este lugar</p>
+            </div>
+        </section>
+        <div id="image-publish" class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-3 post-usser container-img">
+            <img class="img-helado" src="../assets/images/la-pescaderia.jpg" alt="lugar-recomendado">
+        </div>
+        <section class="row">
+            <section class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-3 container-comment">
+                <div id="container-sugg" class="col-xs-7">
+                    <p id="time">Tue Jan 30 2018</p>
+                    <p class="font-dosis" id="comment">Super recomendado, lo que le sigue de rico</p>
+                </div>
+                <div class="col-xs-2 container-icons">
+                    <div class="row ">
+                        <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                        <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                        <span class="col-sm-1 col-xs-1">1</span>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+    <section id="container-comment" class="row margin">
+        <section class="row">
+            <div class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-5 col-md-offset-3 col-lg-5 col-lg-offset-3 sugg-friend">
+                <p><span>LILI</span> dio SUGG de este lugar</p>
+            </div>
+        </section>
+        <div id="image-publish" class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-3 post-usser container-img">
+            <img class="img-helado" src="../assets/images/pendulo.jpg" alt="lugar-recomendado">
+        </div>
+        <section class="row">
+            <section class="col-xs-offset-3 col-xs-8 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3 col-lg-8 col-lg-offset-3 container-comment">
+                <div id="container-sugg" class="col-xs-7">
+                    <p id="time">Mon Jan 29 2018</p>
+                    <p class="font-dosis" id="comment">No hay nada más bonito, que tomarse un café en este lugar lleno de libros :D</p>
+                </div>
+                <div class="col-xs-2 container-icons">
+                    <div class="row ">
+                        <a id="edit" href=""><i class="fa fa-pencil col-sm-3 col-xs-1" aria-hidden="true"></i></a>
+                        <a id="star" href=""><i class="fa fa-star col-sm-offset-4 col-sm-2 col-xs-1" aria-hidden="true"></i></a>
+                        <span class="col-sm-1 col-xs-1">1</span>
+                    </div>
+                </div>
+
+            </section>
+        </section>
     </section>
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->

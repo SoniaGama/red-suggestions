@@ -76,14 +76,14 @@ var suggestionFriends = [
 
 var friends = [{
         name: "Maky",
-        photo: "assets/images/friend1.png"
+        photo: "../assets/images/friend1.png"
     },
     {
         name: "Robert",
-        photo: "assets/images/friend3.png"
+        photo: "../assets/images/friend3.png"
     },
     {
         name: "Lili",
-        photo: "assets/images/friend2.png"
+        photo: "../assets/images/friend2.png"
     }
 ];
