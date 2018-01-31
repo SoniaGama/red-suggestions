@@ -1,19 +1,46 @@
+//Firebase
+var config = {
+    apiKey: "AIzaSyCsPtmB9oyd1nKnA5cuN5dx9uGXgNgD6Hs",
+    authDomain: "airbnb-da07c.firebaseapp.com",
+    databaseURL: "https://airbnb-da07c.firebaseio.com",
+    projectId: "airbnb-da07c",
+    storageBucket: "airbnb-da07c.appspot.com",
+    messagingSenderId: "289392080208"
+  };
+  firebase.initializeApp(config);
 
 //elementos traidos del html
 var $submit = $("#publish");
 var $btnLogin = $(".boton-login"); //botón iniciar sesión
 var $imagePublish = $(".image-publish");
-var $comment = $(".comment-prueba");
+// var $comment = $(".comment-prueba");
 var init = $(".init");
 
 function loadPage () {
   $("#menu-bars").click(menu);
-  // $submit.click(showSugg);
-  //$(".avatar").click(changeProfile);
   $(".logo-mini").click(changeIcon);
   $("#publish").click(showSugg);
-
+  $(".init").click(login);
+  $("#unload-fire-base").change(unloadImage);
 }
+
+ //cargar imagenes a firebase
+function unloadImage(event){
+  var fileImage =  event.target.files[0];
+  // console.log(fileImage);
+  var storageRef = firebase.storage().ref("images/"+fileImage.name);
+  // console.log(firebase.storage);
+  var unloadImg = storageRef.put(fileImage);
+}
+
+
+
+//función para iniciar sesión
+function login() {
+  // $(".init-prueba").attr("href","newsfeed.html");
+  // location.href = "newsfeed.html";
+}
+
 
 //función para mostrar menu desplegable del header
 function menu() {
@@ -105,7 +132,7 @@ function changeIcon() {
 
 
 //función para pintar el contenedor de neewfeed
-function paintPostUser(textUserVal) {
+function paintNewsFeed(textUserVal) {
     //llamando elementos a pintar
     var $divImg = $("<div />", { "id": "image-publish", "class": "col-xs-offset-1 col-xs-10 post-usser container-img" });
     var $imgPost = $("<img>", { "alt": "lugar-recomendado" });
@@ -134,10 +161,6 @@ function paintPostUser(textUserVal) {
     $("#container-comment").prepend($sectionComment);
 }
 
-//función para iniciar sesión
-function login() {
-  init.attr
-}
 
 
 $(document).ready(loadPage);
