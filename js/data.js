@@ -73,3 +73,13 @@ var suggestionFriends = [
    phone: "01 55 4444 4878"
  },
 ]
+
+var friends = [
+{name:"Maky",
+photo:"assets/images/friend1.png"},
+{name:"Robert",
+photo:"assets/images/friend2.png"},
+{name:"Lili",
+photo:"assets/images/friend3.png"
+}
+];
