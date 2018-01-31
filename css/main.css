@@ -4,6 +4,8 @@
   background-color: red;
 } */
 
+
+
 /*Estilos para iniciar sesion*/
 
 .login-background {
@@ -12,9 +14,9 @@
 }
 
 .imagotipo {
-    width: 100%;
-    padding-top: 22vh;
-    padding-bottom: 5vh;
+    width: 10%;
+    /*padding-top: 22vh;
+    padding-bottom: 5vh;*/
 }
 
 .btn-login {
@@ -142,7 +144,15 @@ select,
     cursor: pointer;
 }
 
+.avatar-mini {
+  width: 11%;
+}
 
+/*Estilos para la seccion de buscar amigos por medio del filtro*/
+
+.thumbnail > div > h3 {
+  text-align: center;
+}
 
 /* modal */
 .load-image{
